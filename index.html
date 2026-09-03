@@ -411,6 +411,11 @@ header{position:sticky;top:0;z-index:60;background:var(--ink-deep);border-bottom
 .areas-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,52px);align-items:center}
 .areas h2{color:var(--on-ink)}
 .areas .lede{color:var(--on-ink-2)}
+/* Both of these bands sit on a photograph rather than a surface class, so they
+   never pick up a --accent meant for a dark ground and inherit the light-surface
+   deep red instead, which disappears against the picture. */
+.areas .eyebrow,.final .eyebrow{color:#fff}
+.areas .eyebrow::before,.final .eyebrow::before{background:var(--brand-lt)}
 .chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:9px}
 .chips li{
   background:var(--chip-core-bg);border:1px solid rgba(255,255,255,.14);border-radius:100px;
@@ -842,7 +847,7 @@ header{position:sticky;top:0;z-index:60;background:var(--ink-deep);border-bottom
   <div class="final-scrim" aria-hidden="true"></div>
   <div class="wrap center rv">
     <!-- The business's own tagline, from the owner's pinned post. -->
-    <span class="eyebrow" style="color:#fff;justify-content:center">When your roof needs care, The Roofing Dr is there</span>
+    <span class="eyebrow" style="justify-content:center">When your roof needs care, The Roofing Dr is there</span>
     <h2>Ready for a free, no obligation quote?</h2>
     <p class="lede">Answer four quick questions and we will come back to you with a price. Send a photograph of the problem and we will tell you what we think, at no cost.</p>
     <div class="final-btns">
