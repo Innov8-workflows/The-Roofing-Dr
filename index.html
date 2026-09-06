@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>The Roofing Dr | Roofers in Stafford</title>
-<meta name="description" content="Roof repairs, re-roofing, flat roofs, chimneys and guttering across Stafford and Staffordshire. Four quick questions and your free quote comes straight back.">
+<meta name="description" content="Roof repairs, re-roofing, flat roofs, chimneys and guttering across Staffordshire and the West Midlands. 30 years established, 10 year guarantee, free quotes.">
 <meta name="theme-color" content="#0B0D12">
 <!-- DELIBERATE, and the one thing to flip once the client fills the gaps.
      The page still carries visible [PLACEHOLDER] chips (years established,
@@ -21,14 +21,14 @@
 <meta property="og:site_name" content="The Roofing Dr">
 <meta property="og:url" content="https://theroofingdr.co.uk/">
 <meta property="og:title" content="The Roofing Dr | Roofers in Stafford">
-<meta property="og:description" content="Roof repairs, re-roofing, flat roofs, chimneys and guttering across Stafford and Staffordshire. Four quick questions and your free quote comes straight back.">
+<meta property="og:description" content="Roof repairs, re-roofing, flat roofs, chimneys and guttering across Staffordshire and the West Midlands. 30 years established, 10 year guarantee, free quotes.">
 <meta property="og:image" content="https://theroofingdr.co.uk/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The Roofing Dr | Roofers in Stafford">
-<meta name="twitter:description" content="Roof repairs, re-roofing, flat roofs, chimneys and guttering across Stafford and Staffordshire. Four quick questions and your free quote comes straight back.">
+<meta name="twitter:description" content="Roof repairs, re-roofing, flat roofs, chimneys and guttering across Staffordshire and the West Midlands. 30 years established, 10 year guarantee, free quotes.">
 <meta name="twitter:image" content="https://theroofingdr.co.uk/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -362,6 +362,17 @@ header{position:sticky;top:0;z-index:60;background:var(--ink-deep);border-bottom
   display:grid;place-items:center;font-family:var(--font-display);font-weight:800;font-size:18px;
   margin-bottom:14px;box-shadow:0 6px 16px rgba(var(--brand-rgb),.3);
 }
+/* The why-us band reuses .step, but leads with an icon rather than a number,
+   so the two 4-up bands do not read as the same list twice. */
+.step .ico{
+  width:40px;height:40px;border-radius:var(--r);
+  background:rgba(var(--brand-rgb),.12);border:1px solid rgba(var(--brand-rgb),.28);
+  display:grid;place-items:center;margin-bottom:14px;
+}
+.step .ico svg{
+  width:21px;height:21px;fill:none;stroke:var(--accent);
+  stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+}
 .step h3{font-size:17.5px;color:var(--fg)}
 .step p{margin-top:8px;font-size:14.2px;color:var(--fg-muted);line-height:1.55}
 
@@ -547,10 +558,9 @@ header{position:sticky;top:0;z-index:60;background:var(--ink-deep);border-bottom
   <div class="wrap hdr">
     <div class="hdr-logo" role="img" aria-label="The Roofing Dr logo"></div>
     <div class="hdr-right">
-      <div class="rating">
-        <span class="g" aria-hidden="true"><span class="b1">G</span><span class="b2">o</span><span class="b3">o</span><span class="b4">g</span><span class="b5">l</span><span class="b6">e</span></span>
-        <span><span class="stars" style="color:var(--star-muted)" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br><span class="ph">[PLACEHOLDER]</span> rating</span>
-      </div>
+      <!-- No rating block. They have no reviews on any platform - the Facebook
+           Mentions tab is empty and there is no Google listing found - so there
+           is nothing truthful to show. Put it back the day there is. -->
       <a class="hdr-call" href="tel:07886285512" data-lead="call">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         <span>Call Now</span>
@@ -561,9 +571,9 @@ header{position:sticky;top:0;z-index:60;background:var(--ink-deep);border-bottom
 
 <!-- ============================================================
      BADGE BAR
-     Two badges state only what this page itself offers. The other two
-     are placeholders: nothing about years trading or a guarantee has
-     been evidenced, and check.js reports them back.
+     Years established and the guarantee are on Jay's say-so, 2026-09-06.
+     Nothing here touches insurance or accreditation, which remain
+     unevidenced and unmentioned anywhere on the page.
      ============================================================ -->
 <div class="badges">
   <ul>
@@ -577,11 +587,11 @@ header{position:sticky;top:0;z-index:60;background:var(--ink-deep);border-bottom
     </li>
     <li>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>
-      <span class="ph">[PLACEHOLDER]</span>&nbsp;years established
+      30 years established
     </li>
     <li>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10v12"/><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/></svg>
-      <span class="ph">[PLACEHOLDER]</span>&nbsp;year guarantee
+      10 year guarantee
     </li>
   </ul>
 </div>
@@ -602,7 +612,7 @@ header{position:sticky;top:0;z-index:60;background:var(--ink-deep);border-bottom
       <h1>Your local roofing team in <span class="hl">Stafford</span></h1>
       <p class="sub">Tap the job you need below and get a free, no obligation quote straight back. Four quick questions, and no phone call unless you want one.</p>
       <ul class="hero-points">
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Repairs, re-roofs, flat roofs and leadwork</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>30 years in the trade, backed by a 10 year guarantee</li>
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Quotes in writing, with no hard sell</li>
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Photographs of the parts you cannot see</li>
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Sheeted down, cleared up, drive swept</li>
@@ -651,10 +661,6 @@ header{position:sticky;top:0;z-index:60;background:var(--ink-deep);border-bottom
               <button class="opt" type="button" data-val="Fascias, soffits or guttering">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3 2 5v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z"/><path d="M6 8h4"/><path d="M6 18h4"/><path d="m12 3-2 2v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z"/><path d="M14 8h4"/><path d="M14 18h4"/><path d="m20 3-2 2v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z"/></svg>
                 Fascias, soffits or guttering
-              </button>
-              <button class="opt" type="button" data-val="Moss removal or cleaning">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>
-                Moss removal or cleaning
               </button>
             </div>
           </div>
@@ -792,7 +798,7 @@ header{position:sticky;top:0;z-index:60;background:var(--ink-deep);border-bottom
     <div class="about-copy rv">
       <span class="eyebrow">About us</span>
       <h2 class="title">Meet John</h2>
-      <p>John has been working in the roofing trade across Staffordshire and the surrounding areas for <span class="ph">[PLACEHOLDER]</span> years, keeping people's homes safe, dry and protected. From a small repair to a complete new roof, no job is too big or too small.</p>
+      <p>John has been working in the roofing trade across Staffordshire and the surrounding areas for 30 years, keeping people's homes safe, dry and protected. From a small repair to a complete new roof, no job is too big or too small.</p>
       <p>What that means for you is the bit most people find hardest to get. Someone turns up when they said they would, tells you what the roof actually needs rather than what is easiest to sell, uses materials that will still be doing their job in twenty years, and puts the price in writing.</p>
       <ul class="about-list">
         <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>We look at the actual roof before quoting, never from the pavement</li>
@@ -804,38 +810,46 @@ header{position:sticky;top:0;z-index:60;background:var(--ink-deep);border-bottom
 </section>
 
 <!-- ============================================================
-     REVIEWS
-     No reviews have been supplied, so none are shown. Inventing them
-     has shipped once already and must not happen twice. The cards keep
-     the shape so the real ones drop straight in.
+     WHY CHOOSE US
+     This slot held the reviews carousel. It was removed rather than left
+     as placeholder cards, because the business has NO reviews on any
+     platform - the Facebook Mentions tab is empty and no Google listing
+     was found. Inventing reviews has shipped once already and must not
+     happen twice. Every point below is a fact Jay confirmed on
+     2026-09-06 or a promise the page itself makes. Put the carousel back
+     the day there are real reviews to put in it.
      ============================================================ -->
 <section class="band s-tint">
   <div class="wrap">
     <div class="center rv">
-      <span class="eyebrow">Reviews</span>
-      <h2 class="title">What customers say</h2>
-      <p class="lede">Real reviews go here, word for word, credited to the first name and town the platform shows.</p>
+      <span class="eyebrow">Why us</span>
+      <h2 class="title">Three decades of roofs across Staffordshire and the West Midlands</h2>
+      <p class="lede">A reputation built job by job, not bought.</p>
     </div>
-    <div class="rv-grid">
-      <blockquote class="rv-card rv">
-        <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p><span class="ph">[PLACEHOLDER]</span> A real customer review, pasted in exactly as it was written.</p>
-        <cite><span class="ph">[PLACEHOLDER]</span> Name and town</cite>
-      </blockquote>
-      <blockquote class="rv-card rv">
-        <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p><span class="ph">[PLACEHOLDER]</span> A real customer review, pasted in exactly as it was written.</p>
-        <cite><span class="ph">[PLACEHOLDER]</span> Name and town</cite>
-      </blockquote>
-      <blockquote class="rv-card rv">
-        <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-        <p><span class="ph">[PLACEHOLDER]</span> A real customer review, pasted in exactly as it was written.</p>
-        <cite><span class="ph">[PLACEHOLDER]</span> Name and town</cite>
-      </blockquote>
+    <div class="steps">
+      <div class="step rv">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg></div>
+        <h3>30 years established</h3>
+        <p>John has been on roofs since long before most of his competitors started trading.</p>
+      </div>
+      <div class="step rv">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>10 year guarantee</h3>
+        <p>The work is guaranteed for 10 years, so a roof done once is done properly.</p>
+      </div>
+      <div class="step rv">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg></div>
+        <h3>You see the evidence</h3>
+        <p>Photographs before and after, including the parts of the roof you cannot climb up to.</p>
+      </div>
+      <div class="step rv">
+        <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3>Local to Stafford</h3>
+        <p>Based here, working here. You are not waiting on someone driving across the county.</p>
+      </div>
     </div>
     <div class="rv-badges rv">
-      <span class="rv-badge"><span class="g" aria-hidden="true"><span class="b1">G</span><span class="b2">o</span><span class="b3">o</span><span class="b4">g</span><span class="b5">l</span><span class="b6">e</span></span><span class="ph">[PLACEHOLDER]</span> rating</span>
-      <a class="rv-badge" href="https://www.facebook.com/profile.php?id=61593779051997" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="#1877F2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Find us on Facebook</a>
+      <a class="rv-badge" href="https://www.facebook.com/profile.php?id=61593779051997" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="#1877F2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>See our recent work on Facebook</a>
     </div>
   </div>
 </section>
@@ -847,18 +861,20 @@ header{position:sticky;top:0;z-index:60;background:var(--ink-deep);border-bottom
   <div class="wrap areas-inner">
     <div class="rv">
       <span class="eyebrow">Coverage</span>
-      <h2 class="title">Proudly covering Stafford and Staffordshire</h2>
-      <p class="lede">Based in Stafford, working right across Staffordshire and the surrounding areas. If your town is not on the list, ask anyway. We travel a little further for bigger jobs.</p>
+      <h2 class="title">Proudly covering Stafford and the surrounding areas</h2>
+      <p class="lede">Based in Stafford, working right across Staffordshire and the West Midlands. If your town is not on the list, ask anyway. We travel a little further for bigger jobs.</p>
     </div>
-    <!-- Only the coverage the business itself states: Stafford as the address on
-         its page, Staffordshire and surrounding areas from the owner's own post.
-         The individual towns are a service-area fact nobody has supplied, and a
-         service area is one of the things the house rules forbid inventing. -->
+    <!-- The six towns Jay confirmed on 2026-09-06. Wolverhampton and Walsall are
+         West Midlands rather than Staffordshire, which is why the copy above
+         says "Staffordshire and the West Midlands" instead of naming one county
+         and then listing towns outside it. -->
     <ul class="chips rv">
       <li>Stafford</li>
-      <li>Staffordshire</li>
-      <li>Surrounding areas</li>
-      <li><span class="ph">[PLACEHOLDER]</span>&nbsp;the towns John covers</li>
+      <li>Penkridge</li>
+      <li>Wolverhampton</li>
+      <li>Walsall</li>
+      <li>Cannock</li>
+      <li>Stoke-on-Trent</li>
     </ul>
   </div>
 </section>
@@ -903,10 +919,10 @@ header{position:sticky;top:0;z-index:60;background:var(--ink-deep);border-bottom
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           07886 285512
         </a>
-        <span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="var(--brand-lt)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          <span class="ph">[PLACEHOLDER]</span>&nbsp;email address
-        </span>
+        <!-- No email row and no opening-hours row: neither has been supplied,
+             and a footer that says "[PLACEHOLDER] email address" is worse than
+             one that simply gives the number and the Facebook page. Add both
+             back the moment John provides them. -->
         <a href="https://www.facebook.com/profile.php?id=61593779051997" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
           Find us on Facebook
@@ -914,10 +930,6 @@ header{position:sticky;top:0;z-index:60;background:var(--ink-deep);border-bottom
         <span>
           <svg viewBox="0 0 24 24" fill="none" stroke="var(--brand-lt)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
           Stafford and the surrounding areas
-        </span>
-        <span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="var(--brand-lt)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          <span class="ph">[PLACEHOLDER]</span>&nbsp;opening hours
         </span>
       </div>
     </div>
