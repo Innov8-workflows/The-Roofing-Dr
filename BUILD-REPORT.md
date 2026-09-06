@@ -42,9 +42,10 @@ Jay asked for every placeholder chip to go. Three could not be filled because th
 information does not exist, so the elements were removed rather than invented:
 
 - **The entire reviews section, and the header rating block.** They have **no
-  reviews on any platform** - the Facebook Mentions tab is empty and no Google
-  listing was found. The slot now holds a "why us" band built only from
-  confirmed facts. **Put the carousel back the day there are real reviews.**
+  reviews on any platform**: the Facebook Mentions tab is empty, and the Google
+  Business Profile (found 2026-09-06) reads "No reviews". The slot now holds a
+  "why us" band built only from confirmed facts. **Put the carousel back the day
+  there are real reviews.**
 - **The footer email row.** No address supplied.
 - **The footer opening-hours row.** Not supplied.
 
@@ -162,3 +163,20 @@ stalled video.
   Facebook post images - **is not registered** (Nominet RDAP 404, no DNS). Worth
   telling John: anyone reading it off his van gets nothing. Note this is a
   *different* domain from the live `theroofingdr.co.uk`.
+
+## Two things to fix on their Google Business Profile
+
+Found 2026-09-06 while checking whether a review platform backed the Instagram
+bio's "5 STAR RATED" claim. Neither is a website change; both are John's to do,
+and both are free.
+
+1. **The Website button points at `smartairspecialists.com`** - an unrelated HVAC
+   company. Anyone clicking through from Google lands on a different business.
+   It should point at `https://theroofingdr.co.uk`.
+2. **The listing has no reviews.** It is the single highest-value thing he could
+   fix, and it is what makes the removed carousel restorable.
+
+The listing also gives two facts not currently on the site: the registered name
+is **THE ROOFING DR LTD** (a limited company), and the hours read **open 24
+hours**. Neither has been added - the 24 hours in particular is a promise that
+generates 2am calls, so it is Jay's call rather than an automatic harvest.
