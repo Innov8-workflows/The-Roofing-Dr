@@ -23,6 +23,8 @@ page is inferred.
 | Guarantee | 10 years | Jay, 2026-09-06 |
 | Areas | Stafford, Penkridge, Wolverhampton, Walsall, Cannock, Stoke-on-Trent | Jay, 2026-09-06 |
 | Facebook | facebook.com/profile.php?id=61593779051997 | 738 followers |
+| Instagram | instagram.com/theroofdr_ | 644 followers, 2 posts |
+| Google | THE ROOFING DR LTD, Teddesley Rd, open 24 hours | **no reviews**, and its Website button points at an unrelated firm |
 | Tagline | "When your roof needs care, The Roofing DR is there" | Facebook pinned post |
 
 Wolverhampton and Walsall are **West Midlands, not Staffordshire**, which is why
@@ -55,7 +57,7 @@ now has five options.
 
 1. Email address
 2. Opening hours
-3. Reviews - the biggest remaining gap
+3. Reviews - the biggest remaining gap. NOTE the Instagram bio says "5 STAR RATED" but no platform backs it: Facebook Mentions is empty and the Google listing reads "No reviews". It is deliberately not on the site.
 4. Client sign-off
 
 **`noindex,nofollow` is still on.** The placeholder chips that originally
