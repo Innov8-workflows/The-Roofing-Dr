@@ -61,7 +61,7 @@ now has five options.
 2. Opening hours (the Google listing says open 24 hours; not added, because on a
    landing page that is a promise that generates 2am calls - Jay's call)
 3. Reviews - the biggest remaining conversion gap
-4. `META_PIXEL_ID` and `GA4_ID` in `site.config.js` - see **Trackers** below
+4. `META_PIXEL_ID` in `site.config.js` - GA4 is done (`G-7RD6XVT3F9`, live 2026-09-08)
 5. CRM `track.js` - project 29's `tracking_id` is empty, so the Client Dash
    site-metrics tiles stay blank
 6. Client sign-off
@@ -103,7 +103,7 @@ Neither the Meta Pixel nor GA4 is in the head. Both are injected by
 `grantConsent()` and only after an explicit Accept, because both set cookies and
 UK PECR requires consent first.
 
-`META_PIXEL_ID` and `GA4_ID` are build tokens in `site.config.js`. **An empty one
+GA4 is live as `G-7RD6XVT3F9`. **In GA4 Admin, mark `Lead` as a Key event** or it will not count as a conversion. `META_PIXEL_ID` is still blank. Both are build tokens in `site.config.js`. **An empty one
 skips that tracker entirely** rather than emitting a broken snippet, so the page
 is safe to ship before the IDs exist. Fill them, rebuild, deploy.
 

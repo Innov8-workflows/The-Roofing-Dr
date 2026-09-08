@@ -1028,7 +1028,7 @@ body.cc-open .wa{bottom:calc(18px + 96px)}
 
   var KEY = 'roofingdr_consent';
   var PIXEL = '';   /* blank until supplied - loader no-ops */
-  var GA4   = '';          /* blank until supplied - loader no-ops */
+  var GA4   = 'G-7RD6XVT3F9';          /* blank until supplied - loader no-ops */
 
   var bar = document.getElementById('cc');
   var loaded = false;
@@ -1054,7 +1054,10 @@ body.cc-open .wa{bottom:calc(18px + 96px)}
       window.dataLayer = window.dataLayer || [];
       window.gtag = function () { window.dataLayer.push(arguments); };
       gtag('js', new Date());
-      gtag('config', GA4, { anonymize_ip: true });
+      /* No anonymize_ip: that is a Universal Analytics parameter and GA4
+         ignores it, because GA4 already drops the last IP octet itself.
+         Setting it would imply a control that is not actually being applied. */
+      gtag('config', GA4);
     }
 
     if (PIXEL) {
