@@ -77,6 +77,7 @@ job. `robots.txt` already allows crawling, so the tag is being read.
 | Domain | theroofingdr.co.uk, GoDaddy registration, Cloudflare nameservers `chin` / `cleo.ns.cloudflare.com` |
 | Zone | `c7947ecf694cb0b77257a1b550f7f7c1`, Free plan |
 | Worker | `the-roofing-dr`, `workers_dev: false` |
+| Lead log | Sheet `1MQ3t4P5HmVIcPM0G-ssa1pmDk5bj6dd94uvM24Oao8c`, Apps Script `1G03w4ydy...`, innov8 CRM project 29 |
 | Repo | `Innov8-workflows/The-Roofing-Dr` (GitHub Pages preview, deploys via Actions) |
 
 This is a **landing page, not the standard homepage**, structured to match
@@ -146,7 +147,7 @@ stalled video.
 
 ---
 
-## Not done yet
+undefined
 
 - **Lead capture.** No `/lead-log` or `/appscript` wiring. The quiz hands off to
   WhatsApp and SMS only, so nothing is recorded anywhere.
@@ -154,7 +155,8 @@ stalled video.
 - **No reviews anywhere.** With the carousel removed the page has zero social
   proof. `/review-landing-page` builds the page John texts a customer the day a
   job finishes, which is how that gets fixed at source.
-- **The video is still base64.** It is the only thing keeping the build in
+- ~~The video is still base64.~~ **Done 2026-09-08** - deploy.js externalises every data URI into /assets/. Document 2.15 MB to 70 KB; quiz tappable 8.7s to 0.74s on slow 4G.
+- **OLD NOTE, kept for context:** It is the only thing keeping the build in
   `demo` mode - `client` mode fails on "1 base64 video" and "2.10 MB exceeds the
   2 MB client budget", and both are the same cause. Serving it as a real file
   would cut roughly 0.5 MB off first paint, allow range-seeking, and let the
