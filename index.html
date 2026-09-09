@@ -1029,6 +1029,8 @@ body.cc-open .wa{bottom:calc(18px + 96px)}
   var KEY = 'roofingdr_consent';
   var PIXEL = '830826223035594';   /* blank until supplied - loader no-ops */
   var GA4   = 'G-7RD6XVT3F9';          /* blank until supplied - loader no-ops */
+  var GADS  = 'AW-18438591641';   /* AW-... Google Ads conversion account */
+  var GADS_LABEL = 'UjzeCMmTvfEcEJmpmthE';   /* the conversion action */
 
   var bar = document.getElementById('cc');
   var loaded = false;
@@ -1046,10 +1048,15 @@ body.cc-open .wa{bottom:calc(18px + 96px)}
     if (loaded) return;
     loaded = true;
 
-    if (GA4) {
+    /* GA4 and Google Ads share one gtag.js. Google's emailed instructions tell
+       you to paste a second copy of the library for Ads; doing that loads it
+       twice and duplicates every hit. The correct form, which Google's own
+       "if you already installed the Google tag from another product" note
+       describes, is one library and a config line per destination. */
+    if (GA4 || GADS) {
       var s = document.createElement('script');
       s.async = true;
-      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA4;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + (GA4 || GADS);
       document.head.appendChild(s);
       window.dataLayer = window.dataLayer || [];
       window.gtag = function () { window.dataLayer.push(arguments); };
@@ -1057,7 +1064,8 @@ body.cc-open .wa{bottom:calc(18px + 96px)}
       /* No anonymize_ip: that is a Universal Analytics parameter and GA4
          ignores it, because GA4 already drops the last IP octet itself.
          Setting it would imply a control that is not actually being applied. */
-      gtag('config', GA4);
+      if (GA4) gtag('config', GA4);
+      if (GADS) gtag('config', GADS);
     }
 
     if (PIXEL) {
@@ -1092,6 +1100,19 @@ body.cc-open .wa{bottom:calc(18px + 96px)}
       return;
     }
     try { if (window.gtag) gtag('event', name, params || {}); } catch (e) {}
+    /* Google Ads conversion. Google's instructions assume a "thank you" page to
+       hang this on; there is no such page here, because the funnel hands off to
+       WhatsApp or SMS and the visitor never comes back. So it fires from the
+       same Lead moment as Meta's.
+       No value/currency: Google's snippet ships a placeholder 1.00 GBP, and a
+       roofing lead is not worth a pound. A wrong number makes the Ads ROAS
+       column actively misleading, so it is better to send none until the client
+       gives a real figure. */
+    try {
+      if (window.gtag && GADS && GADS_LABEL && name === 'Lead') {
+        gtag('event', 'conversion', { send_to: GADS + '/' + GADS_LABEL });
+      }
+    } catch (e) {}
     try {
       if (window.fbq) {
         /* Lead is a standard Meta event; everything else is custom. */
